@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-<<<<<<< HEAD
-      - run: "cd app && npm run build "
-=======
+
+      - run: "npm ci  && npm run build "
+
       - run: y
->>>>>>> 0972600 (Staging all changes before pulling)
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
